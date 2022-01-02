@@ -68,7 +68,7 @@ const box2Ref = useRef(null)
 
 ## API Referance
 
-### <StraightLine />
+### StraightLine
 
 This React component should take following props:
 
@@ -86,7 +86,7 @@ This React component should take following props:
   | x (required) | "left" or "center" or "right" |
   | y (required) | "top" or "mid" or "bottom" |
 
-### <LineL />
+### LineL
 
 This React component should take following props:
 
