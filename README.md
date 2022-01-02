@@ -24,7 +24,7 @@ or with yarn
 
 ```javascript
 import {useRef} from "react"
-import { StraightLine, LineL } from "draw-line-connect/react";
+import { StraightLine, LineL } from "react-drawline";
 // inside the component...
 const box1Ref = useRef(null)
 const box2Ref = useRef(null)
@@ -68,7 +68,7 @@ const box2Ref = useRef(null)
 
 ## API Referance
 
-#### <StraightLine />
+### <StraightLine />
 
 This React component should take following props:
 
@@ -86,7 +86,7 @@ This React component should take following props:
   | x (required) | "left" or "center" or "right" |
   | y (required) | "top" or "mid" or "bottom" |
 
-#### <LineL />
+### <LineL />
 
 This React component should take following props:
 
@@ -117,6 +117,12 @@ This React component should take following props:
 - className: string (optional)
 
 - Any valid div attributes (optional)
+
+## FAQ
+
+#### Can I use it in frameworks such as Next.js?
+
+Yes you can! This package is compatible with server-side rendering react frameworks such as Next.js
 
 ## Features
 
