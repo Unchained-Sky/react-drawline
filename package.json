@@ -1,7 +1,7 @@
 {
   "name": "react-drawline",
   "version": "1.0.3",
-  "description": "",
+  "description": "You can draw lines between your react components and connect them. This visual line can be either linear or in the shape of L.",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "scripts": {
@@ -10,8 +10,28 @@
     "build-storybook": "build-storybook",
     "build": "rollup -c"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burakkgunduzz/react-drawline.git"
+  },
+  "keywords": [
+    "draw",
+    "line",
+    "react",
+    "nextjs",
+    "connect",
+    "javascript",
+    "html",
+    "css",
+    "dom",
+    "component"
+  ],
   "author": "Burak Gunduz",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/burakkgunduzz/react-drawline/issues"
+  },
+  "homepage": "https://github.com/burakkgunduzz/react-drawline#readme",
   "devDependencies": {
     "@babel/core": "^7.16.7",
     "@babel/plugin-transform-react-display-name": "^7.16.7",
