@@ -37,13 +37,19 @@ export const StraightLine = (props) => {
   const [off1, setOff1] = useState(null);
   const [off2, setOff2] = useState(null);
 
-  useEffect(() => {
-    try {
-      setOff1(getOffset(startingElementRef.current));
-      setOff2(getOffset(endingElementRef.current));
-    } catch {
-      console.error(`${startingElementRef} is not valid DOM element`);
+  // Instead of an effect we use a layout effect and an on window resize event
+  React.useLayoutEffect(() => {
+    function updatePosition() {
+      try {
+        setOff1(getOffset(startingElementRef.current));
+        setOff2(getOffset(endingElementRef.current));
+      } catch {
+        console.error(`${startingElementRef} is not valid DOM element`);
+      }
     }
+    window.addEventListener("resize", updatePosition);
+    updatePosition();
+    return () => window.removeEventListener("resize", updatePosition);
   }, []);
 
   let x1, y1, x2, y2, length, cx, cy, angle;
