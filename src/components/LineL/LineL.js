@@ -38,13 +38,19 @@ export const LineL = (props) => {
   const [off1, setOff1] = useState(null);
   const [off2, setOff2] = useState(null);
 
-  useEffect(() => {
-    try {
-      setOff1(getOffset(startingElementRef.current));
-      setOff2(getOffset(endingElementRef.current));
-    } catch {
-      console.error(`${startingElementRef} is not valid DOM element`);
+  // Instead of an effect we use a layout effect and an on window resize event
+  React.useLayoutEffect(() => {
+    function updatePosition() {
+      try {
+        setOff1(getOffset(startingElementRef.current));
+        setOff2(getOffset(endingElementRef.current));
+      } catch {
+        console.error(`${startingElementRef} is not valid DOM element`);
+      }
     }
+    window.addEventListener("resize", updatePosition);
+    updatePosition();
+    return () => window.removeEventListener("resize", updatePosition);
   }, []);
 
   let x1, x2, y1, y2, p1, p2, length, length2, cx, cx2, cy, cy2, angle, angle2;
