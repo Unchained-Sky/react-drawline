@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from "react";
-import getOffset from "../../helpers/gettOffset";
+import getOffset from "../../helpers/getOffset";
+import { LineProps } from "../../types/Line";
 
-export const LineL = (props) => {
+interface LineLProps extends LineProps {
+  shape?: "normal" | "upsidedownL";
+}
+
+export const LineL = (props: LineLProps) => {
   [
     props.startingElement.ref,
     props.startingElement.x,

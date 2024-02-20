@@ -7,5 +7,8 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials"
   ],
-  "framework": "@storybook/react"
+  "framework": "@storybook/react",
+  "typescript": {
+    "reactDocgen": "react-docgen-typescript-plugin"
+  }
 }

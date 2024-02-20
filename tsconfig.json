@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"target": "es5",
+		"esModuleInterop": true,
+		"jsx": "react-jsx",
+		"declaration": true,
+		"declarationDir": "dist/dts",
+		"emitDeclarationOnly": true,
+		"module": "ESNext",
+		"moduleResolution": "Bundler"
+	},
+	"include": [
+		"./src/**/*"
+	]
+}

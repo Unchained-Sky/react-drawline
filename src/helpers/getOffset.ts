@@ -1,10 +1,11 @@
-function getOffset(element) {
+function getOffset(element: HTMLElement) {
   const rect = element.getBoundingClientRect();
 
   const left = rect.left + window.pageXOffset;
   const top = rect.top + window.pageYOffset;
-  const width = rect.width || el.offsetWidth;
-  const height = rect.height || el.offsetHeight;
+  // ! not sure what 'el' is
+  const width = rect.width; // || el.offsetWidth;
+  const height = rect.height; // || el.offsetHeight;
   const right = left + width;
   const bottom = top + height;
   const mid = top + height / 2;

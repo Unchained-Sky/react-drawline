@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import getOffset from "../../helpers/gettOffset";
+import getOffset from "../../helpers/getOffset";
+import { LineProps } from "../../types/Line";
 
-export const StraightLine = (props) => {
+export const StraightLine = (props: LineProps) => {
   [
     props.startingElement.ref,
     props.startingElement.x,
