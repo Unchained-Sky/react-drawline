@@ -8,9 +8,12 @@
 		"declarationDir": "dist/dts",
 		"emitDeclarationOnly": true,
 		"module": "ESNext",
-		"moduleResolution": "Bundler"
+		"moduleResolution": "Bundler",
+		"skipLibCheck": true,
+		"strict": true
 	},
 	"include": [
-		"./src/**/*"
+		"./src/**/*",
+		".eslintrc.cjs"
 	]
 }

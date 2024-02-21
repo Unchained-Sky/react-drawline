@@ -1,33 +1,33 @@
-import React, { useRef } from "react";
-import { storiesOf } from "@storybook/react";
+import { storiesOf } from '@storybook/react';
+import React, { useRef } from 'react';
 
-import { LineL } from "../components/LineL/LineL";
+import { LineL } from '../components/LineL';
 
-const stories = storiesOf("LineL", module);
+const stories = storiesOf('LineL', module);
 
-stories.add("From Right-mid to Top-center", () => {
+stories.add('From Right-mid to Top-center', () => {
   const box1Ref = useRef(null);
   const box2Ref = useRef(null);
   return (
     <>
       <LineL
-        startingElement={{ ref: box1Ref, x: "right", y: "mid" }}
-        endingElement={{ ref: box2Ref, x: "center", y: "top" }}
+        startingElement={{ ref: box1Ref, x: 'right', y: 'mid' }}
+        endingElement={{ ref: box2Ref, x: 'center', y: 'top' }}
         shape="upsidedownL"
       />
       <div
         ref={box1Ref}
-        style={{ width: 200, height: 200, border: "2px solid blue" }}
-      ></div>
+        style={{ width: 200, height: 200, border: '2px solid blue' }}
+      />
       <div
         ref={box2Ref}
         style={{
           width: 200,
           height: 200,
-          border: "2px solid red",
-          marginLeft: "auto",
+          border: '2px solid red',
+          marginLeft: 'auto',
         }}
-      ></div>
+      />
     </>
   );
 });

@@ -1,26 +1,24 @@
-function getOffset(element: HTMLElement) {
-  const rect = element.getBoundingClientRect();
+export type Offset = ReturnType<typeof getOffset>
 
-  const left = rect.left + window.pageXOffset;
-  const top = rect.top + window.pageYOffset;
-  // ! not sure what 'el' is
-  const width = rect.width; // || el.offsetWidth;
-  const height = rect.height; // || el.offsetHeight;
-  const right = left + width;
-  const bottom = top + height;
-  const mid = top + height / 2;
-  const center = left + width / 2;
+export default function getOffset(element: HTMLElement) {
+	const rect = element.getBoundingClientRect()
 
-  return {
-    left,
-    right,
-    top,
-    bottom,
-    mid,
-    center,
-    width,
-    height,
-  };
+	const left = rect.left + window.scrollX
+	const top = rect.top + window.scrollY
+	const { width, height } = rect
+	const right = left + width
+	const bottom = top + height
+	const mid = top + height / 2
+	const center = left + width / 2
+
+	return {
+		left,
+		right,
+		top,
+		bottom,
+		mid,
+		center,
+		width,
+		height
+	}
 }
-
-export default getOffset;

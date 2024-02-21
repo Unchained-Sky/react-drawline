@@ -1,2 +1,2 @@
-export * from "./components/StraightLine";
-export * from "./components/LineL";
+export * from './components/LineL';
+export * from './components/StraightLine';
