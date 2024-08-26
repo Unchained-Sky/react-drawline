@@ -11,20 +11,20 @@ And the best part is, it can be either a diagonal line or in the shape of L!
 Install react-drawline with npm
 
 ```bash
-  npm install react-drawline
+  npm install @unchainedsky/react-drawline
 ```
 
 or with yarn
 
 ```bash
-  yarn add react-drawline
+  yarn add @unchainedsky/react-drawline
 ```
 
 ## Usage/Examples
 
 ```javascript
 import {useRef} from "react"
-import { StraightLine, LineL } from "react-drawline";
+import { StraightLine, LineL } from "@unchainedsky/react-drawline";
 // inside the component...
 const box1Ref = useRef(null)
 const box2Ref = useRef(null)
@@ -66,47 +66,47 @@ const box2Ref = useRef(null)
 <div ref={box2Ref}></div>
 ```
 
-## API Referance
+## API Reference
 
 ### StraightLine
 
 This React component should take following props:
 
 - startingElement: object (required)
-  | Key | Value |
-  | ------------- |:-------------:|
-  | ref (required) | object |
-  | x (required) | "left" or "center" or "right" |
-  | y (required) | "top" or "mid" or "bottom" |
+    | Key | Value |
+    | ------------- |:-------------:|
+    | ref (required) | object |
+    | x (required) | "left" or "center" or "right" |
+    | y (required) | "top" or "mid" or "bottom" |
 
 - endingElement: object (required)
-  | Key | Value |
-  | ------------- |:-------------:|
-  | ref (required) | object |
-  | x (required) | "left" or "center" or "right" |
-  | y (required) | "top" or "mid" or "bottom" |
+    | Key | Value |
+    | ------------- |:-------------:|
+    | ref (required) | object |
+    | x (required) | "left" or "center" or "right" |
+    | y (required) | "top" or "mid" or "bottom" |
 
 ### LineL
 
 This React component should take following props:
 
 - startingElement: object (required)
-  | Key | Value |
-  | ------------- |:-------------:|
-  | ref (required) | object |
-  | x (required) | "left" or "center" or "right" |
-  | y (required) | "top" or "mid" or "bottom" |
+    | Key | Value |
+    | ------------- |:-------------:|
+    | ref (required) | object |
+    | x (required) | "left" or "center" or "right" |
+    | y (required) | "top" or "mid" or "bottom" |
 
 - endingElement: object (required)
-  | Key | Value |
-  | ------------- |:-------------:|
-  | ref (required) | object |
-  | x (required) | "left" or "center" or "right" |
-  | y (required) | "top" or "mid" or "bottom" |
+    | Key | Value |
+    | ------------- |:-------------:|
+    | ref (required) | object |
+    | x (required) | "left" or "center" or "right" |
+    | y (required) | "top" or "mid" or "bottom" |
 
 - shape: string ("upsidedownL", optional, defaults to "normal")
 
-##### Other optional props for StraightLine and LineL
+#### Other optional props for StraightLine and LineL
 
 - color: string (color in any format, optional, defaults to black)
 
@@ -120,7 +120,7 @@ This React component should take following props:
 
 ## FAQ
 
-#### Can I use it in frameworks such as Next.js?
+### Can I use it in frameworks such as Next.js?
 
 Yes you can! This package is compatible with server-side rendering react frameworks such as Next.js
 
@@ -154,7 +154,7 @@ Contributions are always welcome!
 
 ## Feedback
 
-If you have any feedback, please reach out to us at burakkgunduz21@gmail.com
+If you have any feedback, please reach out to us at <burakkgunduz21@gmail.com>
 
 ## Authors
 

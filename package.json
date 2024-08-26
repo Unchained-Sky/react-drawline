@@ -1,5 +1,5 @@
 {
-  "name": "react-drawline",
+  "name": "@unchainedsky/react-drawline",
   "version": "1.2.1",
   "description": "You can draw lines between your react components and connect them. This visual line can be either linear or in the shape of L.",
   "main": "dist/index.js",
@@ -10,7 +10,8 @@
     "build-storybook": "build-storybook",
     "build": "rollup -c",
     "lint": "eslint src --fix",
-    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
